@@ -6,4 +6,11 @@
 
 I enjoy coding in C, C++ and Python
 
-![perpetual motion](https://www.smbc-comics.com/comics/1501584298-20170801%20(1).png)
+
+| What I think I am doing | What I am actually doing |
+| ------------- | ------------- |
+| <img src="https://media.giphy.com/media/qcj67i2Fg7VJN7mtwZ/giphy.gif"  width="200"> | <img alt= "Calvin and Hobbs" src="https://imgur.com/mHnQHrP.png" img width="500" > |
+
+Also take a look at [Belle II](https://www.belle2.org/), an experiment looking for new physics!
+
+![Belle II logo](https://i.imgur.com/tvd6wrv.png)
