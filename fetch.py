@@ -25,7 +25,7 @@ http://kekb-co-adm03.kek.jp/archappl_skekb/retrieval/data/getData.json
 http://130.87.83.238/archappl_skekb/retrieval/data/getData.json
 http://172.22.16.120:17668/retrieval/data/getData.json               # Belle2, works!
     """
-    
+    logging.debug('contributor: Krishanu Bhattacharyya (https://github.com/krish1010)')
     time_start_str = time_start.isoformat() #ISO 8601 format, UTC timezone
     time_end_str   = time_end.isoformat()   #ISO 8601 format, UTC timezone
     logging.debug(f'fetching {pv} data for {url}')
