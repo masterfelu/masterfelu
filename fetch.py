@@ -54,10 +54,10 @@ http://172.22.16.120:17668/retrieval/data/getData.json               # Belle2, w
     df_within_timerange = df[(df['time']>=time_start) & (df['time']<=time_end)]
 
     if len(df)==1:
-        logging.warn(f"only one data point is fetched for PV {pv} from archiver")
+        logging.warning(f"only one data point is fetched for PV {pv} from archiver")
 
     if len(df_within_timerange)!=len(df):
-        logging.warn(f"Archiver returned {len(df)-len(df_within_timerange)} data point(s) for PV {pv} outside time range. They will be dropped.")
+        logging.warning(f"Archiver returned {len(df)-len(df_within_timerange)} data point(s) for PV {pv} outside time range. They might be dropped.")
 
     if within_timerange:
         return df_within_timerange[columns]
