@@ -61,7 +61,7 @@ HEPMC2PKG="HepMC-$HEPMC2VER"
 HEPMC3PKG="HepMC3-$HEPMC3VER"
 HEPMC2TAR="hepmc$HEPMC2VER.tgz"
 HEPMC3TAR="$HEPMC3PKG.tar.gz"
-HEPMCBASEURL="http://hepmc.web.cern.ch/hepmc/releases"
+HEPMCBASEURL="https://hepmc.web.cern.ch/hepmc/releases"
 if [ "$HEPMCMAJORVERSION" -lt "3" ]
 then
     HEPMCURL=$HEPMCBASEURL/$HEPMC2TAR
@@ -129,8 +129,8 @@ then
     export LC_ALL=en_US.UTF-8
 fi
 
-echo Copying $HEPMC3TAR from home directory
-cp $HOME/$HEPMC3TAR .
+echo Downloading HepMC source from: $HEPMCURL
+curl -fO $HEPMCURL
 echo Downloading Pythia8 source from: $PYTHIAURL
 curl -fO $PYTHIAURL
 echo Downloading Photos source from: $PHOTOSURL
